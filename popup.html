@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+  <head>
+    <script src="jquery-2.1.0.min.js"></script>
+    <script src="bootstrap-datepicker.js"></script>
+    <link rel="stylesheet" type="text/css" href="datepicker.css">
+    <title>Getting Started Extension's Popup</title>
+    <style>
+      body {
+        min-width: 357px;
+        overflow-x: hidden;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 200;
+      }
+
+      img {
+        margin: 5px;
+        width:75px;
+      }
+      
+      p{
+        margin:2px;
+      }
+      .team{
+        width:40%;
+        float:left;
+     
+        text-align: center;
+      }
+      .team p{
+        text-align: center;
+      }
+      .game{
+        margin:0px auto 5px auto;
+        border: 2px solid #eee;
+        width:352px;
+        position: relative;
+        padding:10px;
+        overflow: hidden;
+      }
+      .middle{
+        width:20%;
+        float:left;
+      }
+      .score{
+        text-align: center;
+        margin-top:15px;
+        clear: both;
+        color:#ccc;
+        font-size:9pt;
+      }
+      .score p{
+        font-size:16pt;
+        color:#000;
+        
+      }
+      .result{
+        text-align: center;
+        color:#ccc;
+      }
+      .result p{
+        font-size: 9pt;
+      }
+      .result a{
+        text-decoration: none;
+      }
+
+      .stats{
+        display:none;
+      }
+      .vis{
+        display:block;
+      }
+      .hid{
+        display:none;
+      }
+
+      #menu{
+        padding: 0px;
+      }
+
+      #menu li{
+        float:left;
+        list-style: none;
+        padding:5px;
+        font-size:9pt;
+      }
+      #menu li a{
+        text-decoration: none;
+        color:#111;
+      }
+      #menu li a:hover{
+        color:#111;
+      }
+
+      #menu li a:focus{
+        color:#111;
+      }
+
+      #menu li a:active{
+        color:#111;
+      }
+      .news{
+        overflow: hidden;
+        width:100%;
+      }
+      #newsList{
+        padding: 0px;
+        margin: 0px;
+      }
+      #newsList li{
+        list-style-type: none;
+        padding:5px;
+        font-size: 9pt;
+        border-bottom: 1px solid #eee;
+        overflow: hidden;
+      }
+      #newsList li p{
+        float:right;
+        font-size:8pt;
+      }
+      #newsList li:first-child{
+        border-top:1px solid #eee;
+      }
+      .date{
+        font-size: 8pt;
+        color:#ccc;
+        float:right;
+      }
+      .sel{
+        background:#f0f0f0;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="popup.js"></script>
+  </head>
+  <body>
+
+    <div class="input-append date" id="dp3" data-date=local data-date-format="yyyy-mm-dd">
+     
+    </div>
+  </body>
+</html>
+

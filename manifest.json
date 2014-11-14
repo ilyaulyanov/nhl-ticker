@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "NHL Game Schedule",
+  "description": "This extension shows game schedule for NHL.",
+  "version": "1.0",
+
+  "permissions": [
+    "http://www.live.nhle.com/",
+   "http://*/",
+   "http://*.neulion.com/",
+   "http://nhlwc.cdnak.neulion.com/"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "sandbox":{
+    "pages": ["popup.html"]
+  },
+  "icons": { "16": "icon16.png",
+           "48": "icon48.png",
+          "128": "icon128.png" }
+}
